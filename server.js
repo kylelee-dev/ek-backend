@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 8000;
 //   res.send("Test");
 // });
 
+app.use("/api/user", userRoutes);
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
